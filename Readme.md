@@ -20,7 +20,9 @@ type Client struct {
 }
 ```
 
-Client.
+Client which batches stats and flushes at the given Interval or
+when the Size limit is exceeded. Set Verbose to true to enable
+logging output.
 
 #### func  New
 
