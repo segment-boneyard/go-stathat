@@ -13,14 +13,14 @@ var Endpoint = "http://api.stathat.com/ez"
 type count struct {
 	Stat      string `json:"stat"`
 	Count     int64  `json:"count"`
-	Timestamp int64  `json:"t,emitempty"`
+	Timestamp int64  `json:"t,omitempty"`
 }
 
 // Value.
 type value struct {
 	Stat      string  `json:"stat"`
 	Value     float64 `json:"value"`
-	Timestamp int64   `json:"t,emitempty"`
+	Timestamp int64   `json:"t,omitempty"`
 }
 
 // Request body.
