@@ -119,6 +119,7 @@ func (c *Client) send(stats []interface{}) {
 		c.log("error posting stats: %s", err)
 		return
 	}
+	defer res.Body.Close()
 
 	c.log("response -> %s", res.Status)
 }
